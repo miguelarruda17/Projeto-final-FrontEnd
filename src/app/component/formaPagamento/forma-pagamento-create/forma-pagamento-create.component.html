@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-title>Novo fornecedor</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Tipo de Pagamento" [(ngModel)]="formaPagamento.tipoPagamento" name="tipoPagamento">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Status" [(ngModel)]="formaPagamento.status" name="status">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Descrição" [(ngModel)]="formaPagamento.discricao" name="discricao">
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="createFormaPagamento()" color="primary">
+        Salvar
+    </button>
+   
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>
