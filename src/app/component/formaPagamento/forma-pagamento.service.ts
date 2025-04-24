@@ -9,7 +9,7 @@ import { Observable, timeInterval } from 'rxjs';
 })
 export class FormaPagamentoService {
 
-  baseUrl = "http://localhost:3001/forma-pagamento"
+  baseUrl = "http://localhost:8080/formapagamento"
 
   constructor(private snackBar: MatSnackBar,private http: HttpClient) { }
 
@@ -35,7 +35,7 @@ export class FormaPagamentoService {
   }
 
   update(formaPagamento: FormaPagamento): Observable<FormaPagamento>{
-    const url = `${this.baseUrl}/${formaPagamento.idFormaPagamento}`
+    const url = `${this.baseUrl}/${formaPagamento.fpgId}`
     return this.http.put<FormaPagamento>(url, formaPagamento)
   }
 

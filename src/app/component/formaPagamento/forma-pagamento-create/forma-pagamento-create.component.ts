@@ -11,9 +11,8 @@ import { FormaPagamento } from '../forma-pagamento-read/forma-pagamento.model';
 export class FormaPagamentoCreateComponent implements OnInit{
 
   formaPagamento: FormaPagamento = {
-    tipoPagamento: "",
-    status: "",
-    discricao: ""
+    fpgDescricao: "",
+    fpgTipo: ""
 }
 
 constructor(private formaPagamentoService: FormaPagamentoService,

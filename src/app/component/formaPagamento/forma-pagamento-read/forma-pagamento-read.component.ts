@@ -10,7 +10,7 @@ import { FormaPagamentoService } from '../forma-pagamento.service';
 export class FormaPagamentoReadComponent {
 
   formaPagamento!: FormaPagamento[]
-  displayedColumns = ['idFormaPagamento', 'tipoPagamento', 'status', 'discricao', 'action']
+  displayedColumns = ['fpgId', 'fpgDescricao', 'fpgTipo', 'action']
 
   constructor(private formaPagamentoService: FormaPagamentoService) { }
 
