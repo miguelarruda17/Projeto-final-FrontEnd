@@ -1,8 +1,13 @@
-form{
+/* Estilo para o formulário */
+form {
+    /* Define o layout do formulário como flexível */
     display: flex;
+    /* Define a direção dos itens flexíveis como coluna, empilhando-os verticalmente */
     flex-direction: column;
 }
 
-button{
+/* Estilo para os botões */
+button {
+    /* Define a margem superior como 20px, margem direita como 15px, e margens inferior e esquerda como 0px */
     margin: 20px 15px 0px 0px;
 }

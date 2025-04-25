@@ -1,34 +1,42 @@
+<!-- Contêiner principal para a barra lateral e o conteúdo -->
 <mat-sidenav-container class="container">
+    <!-- Barra lateral (sidenav) -->
     <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64">
+        <!-- Lista de navegação dentro da barra lateral -->
         <mat-nav-list class="nav-list">
+            <!-- Link para a página inicial -->
             <a mat-list-item routerLink="/">
                 <i class="material-icons">
-                    home
+                    home <!-- Ícone de casa do Material Icons -->
                 </i>
-                Início
+                Início <!-- Texto do link -->
             </a>
+            <!-- Link para a página de produtos -->
             <a mat-list-item routerLink="/products">
                 <i class="material-icons">
-                    storefront
+                    storefront <!-- Ícone de loja do Material Icons -->
                 </i>
-                Produtos
+                Produtos <!-- Texto do link -->
             </a>
+            <!-- Link para a página de fornecedores -->
             <a mat-list-item routerLink="/fornecedores">
                 <i class="material-icons">
-                    group_add
+                    group_add <!-- Ícone de grupo do Material Icons -->
                 </i>
-                Fornecedores
+                Fornecedores <!-- Texto do link -->
             </a>
+            <!-- Link para a página de forma de pagamento -->
             <a mat-list-item routerLink="/formaPagamento">
                 <i class="material-icons">
-                    local_atm
+                    local_atm <!-- Ícone de pagamento do Material Icons -->
                 </i>
-                Pagamento
+                Pagamento <!-- Texto do link -->
             </a>
         </mat-nav-list>
     </mat-sidenav>
+    <!-- Área de conteúdo principal -->
     <mat-sidenav-content class="content">
-        <!-- usamos para começar a trabalhar com a navegação a partir do clique... -->
+        <!-- Componente que renderiza o conteúdo baseado na rota atual -->
         <router-outlet></router-outlet>
     </mat-sidenav-content>
 </mat-sidenav-container>

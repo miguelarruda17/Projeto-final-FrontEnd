@@ -1,15 +1,19 @@
-<mat-toolbar class="header" met-elevation-z4>
+<!-- Toolbar do Angular Material com a classe 'header' e uma elevação para efeito de sombra -->
+<mat-toolbar class="header" mat-elevation-z4>
     <span>
+        <!-- Link que redireciona para a página inicial -->
         <a routerLink="/">
+            <!-- Imagem do logotipo da aplicação -->
             <img class="logo" src="assets/img/logo-senai.png" alt="logo">
         </a>
     </span>
     <span class="title-group">
+        <!-- Link que não redireciona, mas contém um ícone e texto -->
         <a>
             <i class="material-icons">
-                home
+                home <!-- Ícone de casa do Material Icons -->
             </i>
-            Inicio
+            Inicio <!-- Texto do link -->
         </a>
     </span>
 </mat-toolbar>

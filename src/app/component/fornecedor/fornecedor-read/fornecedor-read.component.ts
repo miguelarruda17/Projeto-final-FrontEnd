@@ -7,19 +7,21 @@ import { FornecedorService } from '../fornecedor.service';
   templateUrl: './fornecedor-read.component.html',
   styleUrls: ['./fornecedor-read.component.css']
 })
-export class FornecedorReadComponent{
+export class FornecedorReadComponent implements OnInit {
 
-  fornecedores!: Fornecedor[]
-  displayedColumns = ['forId', 'forNomeFantasia', 'forCnpj', 'forRazaoSocial', 'action']
+  fornecedores!: Fornecedor[]; // Declaração da propriedade que armazenará a lista de fornecedores
+  displayedColumns = ['forId', 'forNomeFantasia', 'forCnpj', 'forRazaoSocial', 'action']; // Colunas a serem exibidas na tabela
 
   constructor(private fornecedorService: FornecedorService) { }
 
   ngOnInit(): void {
+    // Método chamado ao inicializar o componente
     this.fornecedorService.read().subscribe(fornecedores => {
-      this.fornecedores = fornecedores
-      console.log(fornecedores);
-       
-    })
+      this.fornecedores = fornecedores; // Atribui a resposta do serviço à propriedade fornecedores
+      console.log(fornecedores); // Exibe a lista de fornecedores no console
+    });
   }
-
 }
+
+
+

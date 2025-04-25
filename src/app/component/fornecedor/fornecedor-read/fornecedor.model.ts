@@ -1,6 +1,14 @@
-export interface Fornecedor{
-    forId?: number
-    forNomeFantasia: string
-    forCnpj: number
-    forRazaoSocial: string
+// Definição da interface Fornecedor
+export interface Fornecedor {
+    // Propriedade opcional 'forId' do tipo number
+    forId?: number;
+
+    // Propriedade obrigatória 'forNomeFantasia' do tipo string
+    forNomeFantasia: string;
+
+    // Propriedade obrigatória 'forCnpj' do tipo number
+    forCnpj: number;
+
+    // Propriedade obrigatória 'forRazaoSocial' do tipo string
+    forRazaoSocial: string;
 }

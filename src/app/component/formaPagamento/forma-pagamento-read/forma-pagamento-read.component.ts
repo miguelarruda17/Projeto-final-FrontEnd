@@ -9,17 +9,16 @@ import { FormaPagamentoService } from '../forma-pagamento.service';
 })
 export class FormaPagamentoReadComponent {
 
-  formaPagamento!: FormaPagamento[]
-  displayedColumns = ['fpgId', 'fpgDescricao', 'fpgTipo', 'action']
+  formaPagamento!: FormaPagamento[]; // Declaração da propriedade que armazenará a lista de formas de pagamento
+  displayedColumns = ['fpgId', 'fpgDescricao', 'fpgTipo', 'action']; // Colunas a serem exibidas na tabela
 
   constructor(private formaPagamentoService: FormaPagamentoService) { }
 
   ngOnInit(): void {
+    // Método chamado ao inicializar o componente
     this.formaPagamentoService.read().subscribe(formaPagamento => {
-      this.formaPagamento = formaPagamento
-      console.log(formaPagamento);
-       
-    })
+      this.formaPagamento = formaPagamento; // Atribui a resposta do serviço à propriedade formaPagamento
+      console.log(formaPagamento); // Exibe a lista de formas de pagamento no console
+    });
   }
-
 }

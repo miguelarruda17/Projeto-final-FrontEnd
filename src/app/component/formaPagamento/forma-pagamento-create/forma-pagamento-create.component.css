@@ -1,8 +1,10 @@
-form{
-    display: flex;
-    flex-direction: column;
+/* Estilização do formulário */
+form {
+    display: flex; /* Define o layout do formulário como flexível */
+    flex-direction: column; /* Organiza os elementos filhos em uma coluna */
 }
 
-button{
-    margin: 20px 15px 0px 0px;
+/* Estilização do botão */
+button {
+    margin: 20px 15px 0px 0px; /* Define a margem do botão: 20px acima, 15px à direita, 0px abaixo e 0px à esquerda */
 }

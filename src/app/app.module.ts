@@ -31,6 +31,7 @@ import { FornecedorCreateComponent } from './component/fornecedor/fornecedor-cre
 import { FornecedorCrudComponent } from './views/fornecedor-crud/fornecedor-crud.component';
 import { FormaPagamentoCreateComponent } from './component/formaPagamento/forma-pagamento-create/forma-pagamento-create.component';
 import {MatTableModule} from '@angular/material/table';
+import { ProductUpdateComponent } from './component/product/product-update/product-update.component';
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import {MatTableModule} from '@angular/material/table';
     ProductCreateComponent,
     FornecedorCreateComponent,
     FormaPagamentoCreateComponent,
+    ProductUpdateComponent,
   ],
   imports: [
     BrowserModule,

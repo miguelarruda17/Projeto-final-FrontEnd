@@ -1,24 +1,50 @@
+<!-- Cartão do Angular Material que contém o formulário para criar um novo produto -->
 <mat-card>
+    <!-- Título do cartão que indica a funcionalidade do formulário -->
     <mat-card-title>Novo Produto</mat-card-title>
+    
+    <!-- Início do formulário para cadastro de um novo produto -->
     <form>
+        <!-- Campo de entrada para o nome do produto -->
         <mat-form-field>
-            <input matInput placeholder="Nome" [(ngModel)]="product.proNome" name="proNome">
-        </mat-form-field>
-        <mat-form-field>
-            <input matInput placeholder="Preço de Custo (R$)" [(ngModel)]="product.proPrecoCusto" name="proPrecoCusto">
-        </mat-form-field>
-        <mat-form-field>
-            <input matInput placeholder="Preço de Venda (R$)" [(ngModel)]="product.proPrecoVenda" name="proPrecoVenda">
+            <input 
+                matInput 
+                placeholder="Nome" 
+                [(ngModel)]="product.proNome" 
+                name="proNome">
         </mat-form-field>
         
+        <!-- Campo de entrada para o preço de custo do produto -->
+        <mat-form-field>
+            <input 
+                matInput 
+                placeholder="Preço de Custo (R$)" 
+                [(ngModel)]="product.proPrecoCusto" 
+                name="proPrecoCusto">
+        </mat-form-field>
+        
+        <!-- Campo de entrada para o preço de venda do produto -->
+        <mat-form-field>
+            <input 
+                matInput 
+                placeholder="Preço de Venda (R$)" 
+                [(ngModel)]="product.proPrecoVenda" 
+                name="proPrecoVenda">
+        </mat-form-field>
     </form>
 
-    <button mat-raised-button (click)="createProduct()" color="primary">
+    <!-- Botão para salvar as informações do novo produto -->
+    <button 
+        mat-raised-button 
+        (click)="createProduct()" 
+        color="primary">
         Salvar
     </button>
    
-    <button mat-raised-button (click)="cancel()">
+    <!-- Botão para cancelar a operação e possivelmente voltar à tela anterior -->
+    <button 
+        mat-raised-button 
+        (click)="cancel()">
         Cancelar
     </button>
-
 </mat-card>

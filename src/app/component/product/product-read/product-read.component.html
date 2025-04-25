@@ -1,55 +1,61 @@
-<!--<ul>
+<!-- Comentado: Exemplo de lista não ordenada para exibir produtos -->
+<!--
+<ul>
     <li *ngFor="let product of products">
         {{product.id}} => {{product.name}} => {{product.price}}
     </li>
-</ul> -->
+</ul>
+-->
 
+<!-- Contêiner com elevação para dar um efeito de sombra ao redor da tabela -->
 <div class="mat-elevation-z4">
-    <table mat-table [dataSource]="products">
-      <!-- Id Column -->
-      <ng-container matColumnDef="proId">
-        <th mat-header-cell *matHeaderCellDef>Id</th>
-        <td mat-cell *matCellDef="let row">{{row.proId}}</td>
-      </ng-container>
- 
-      <!-- Name Column -->
-      <ng-container matColumnDef="proNome">
-        <th mat-header-cell *matHeaderCellDef>Nome</th>
-        <td mat-cell *matCellDef="let row">{{row.proNome}}</td>
-      </ng-container>
- 
-      <!-- Price Column -->
-      <ng-container matColumnDef="proPrecoCusto">
-        <th mat-header-cell *matHeaderCellDef>Preço Custo</th>
-                                            <!--UTILIZAÇÃO DE PIPES-->
-        <td mat-cell *matCellDef="let row">{{row.proPrecoCusto | currency: 'BRL'}}</td>
-      </ng-container>
+  <!-- Tabela do Angular Material, com a fonte de dados definida como 'products' -->
+  <table mat-table [dataSource]="products">
+    
+    <!-- Definição da coluna para o ID do produto -->
+    <ng-container matColumnDef="proId">
+      <th mat-header-cell *matHeaderCellDef>Id</th> <!-- Cabeçalho da coluna -->
+      <td mat-cell *matCellDef="let row">{{row.proId}}</td> <!-- Célula que exibe o ID do produto -->
+    </ng-container>
 
-      <!-- Price Column -->
-      <ng-container matColumnDef="proPrecoVenda">
-        <th mat-header-cell *matHeaderCellDef>Preço Venda</th>
-                                            <!--UTILIZAÇÃO DE PIPES-->
-        <td mat-cell *matCellDef="let row">{{row.proPrecoVenda | currency: 'BRL'}}</td>
-      </ng-container>
+    <!-- Definição da coluna para o Nome do produto -->
+    <ng-container matColumnDef="proNome">
+      <th mat-header-cell *matHeaderCellDef>Nome</th> <!-- Cabeçalho da coluna -->
+      <td mat-cell *matCellDef="let row">{{row.proNome}}</td> <!-- Célula que exibe o Nome do produto -->
+    </ng-container>
 
-      <!-- Action Column -->
-      <ng-container matColumnDef="action">
-        <th mat-header-cell *matHeaderCellDef>Ações</th>                    
-        <td mat-cell *matCellDef="let row">
-            <a routerLink="/products/update/{{ row.id }}" class="edit">
-                <i class="material-icons">
-                    edit
-                </i>
-            </a>
-            <a routerLink="/products/delete/{{ row.id }}" class="delete">
-                <i class="material-icons">
-                    delete
-                </i>
-            </a>
-        </td>
-      </ng-container>
- 
-      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-    </table>
-  </div>
+    <!-- Definição da coluna para o Preço de Custo do produto -->
+    <ng-container matColumnDef="proPrecoCusto">
+      <th mat-header-cell *matHeaderCellDef>Preço Custo</th> <!-- Cabeçalho da coluna -->
+      <!-- Utilização de pipe para formatar o preço como moeda -->
+      <td mat-cell *matCellDef="let row">{{row.proPrecoCusto | currency: 'BRL'}}</td> <!-- Célula que exibe o Preço de Custo -->
+    </ng-container>
+
+    <!-- Definição da coluna para o Preço de Venda do produto -->
+    <ng-container matColumnDef="proPrecoVenda">
+      <th mat-header-cell *matHeaderCellDef>Preço Venda</th> <!-- Cabeçalho da coluna -->
+      <!-- Utilização de pipe para formatar o preço como moeda -->
+      <td mat-cell *matCellDef="let row">{{row.proPrecoVenda | currency: 'BRL'}}</td> <!-- Célula que exibe o Preço de Venda -->
+    </ng-container>
+
+    <!-- Definição da coluna para ações (edição e exclusão) -->
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef>Ações</th> <!-- Cabeçalho da coluna -->
+      <td mat-cell *matCellDef="let row">
+          <!-- Link para editar o produto, utilizando o routerLink para navegação -->
+          <a routerLink="/products/update/{{ row.id }}" class="edit">
+              <i class="material-icons">edit</i> <!-- Ícone de edição -->
+          </a>
+          <!-- Link para excluir o produto, utilizando o routerLink para navegação -->
+          <a routerLink="/products/delete/{{ row.id }}" class="delete">
+              <i class="material-icons">delete</i> <!-- Ícone de exclusão -->
+          </a>
+      </td>
+    </ng-container>
+
+    <!-- Linha do cabeçalho da tabela, que utiliza as colunas definidas -->
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <!-- Linhas da tabela que exibem os dados dos produtos -->
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>

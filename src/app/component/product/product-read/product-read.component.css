@@ -1,11 +1,17 @@
-table{
+/* Estilo para a tabela */
+table {
+    /* Define a largura da tabela como 100% do contêiner pai */
     width: 100%;
 }
 
-.edit > i{
-    color: #d9cd26;
+/* Estilo para ícones de edição */
+.edit > i {
+    /* Define a cor do ícone de edição */
+    color: #d9cd26; /* Um tom de amarelo */
 }
 
-.delete > i{
-    color: #e35e6b;
+/* Estilo para ícones de exclusão */
+.delete > i {
+    /* Define a cor do ícone de exclusão */
+    color: #e35e6b; /* Um tom de vermelho */
 }

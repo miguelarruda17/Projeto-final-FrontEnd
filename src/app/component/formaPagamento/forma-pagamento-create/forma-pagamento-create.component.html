@@ -1,22 +1,27 @@
 <mat-card>
     <mat-card-title>Nova Forma de Pagamento</mat-card-title>
+    
+    <!-- Primeiro formulário para a descrição da forma de pagamento -->
     <form>
         <mat-form-field>
             <input matInput placeholder="Descrição" [(ngModel)]="formaPagamento.fpgDescricao" name="fpgDescricao">
         </mat-form-field>
     </form>
+    
+    <!-- Segundo formulário para o tipo da forma de pagamento -->
     <form>
         <mat-form-field>
             <input matInput placeholder="Tipo" [(ngModel)]="formaPagamento.fpgTipo" name="fpgTipo">
         </mat-form-field>
     </form>
 
+    <!-- Botão para salvar a nova forma de pagamento -->
     <button mat-raised-button (click)="createFormaPagamento()" color="primary">
         Salvar
     </button>
    
+    <!-- Botão para cancelar a operação -->
     <button mat-raised-button (click)="cancel()">
         Cancelar
     </button>
-
 </mat-card>

@@ -8,29 +8,31 @@ import { FornecedorService } from '../fornecedor.service';
   templateUrl: './fornecedor-create.component.html',
   styleUrls: ['./fornecedor-create.component.css']
 })
-export class FornecedorCreateComponent implements OnInit{
+export class FornecedorCreateComponent implements OnInit {
 
   fornecedor: Fornecedor = {
     forNomeFantasia: '',
     forCnpj: 0,
     forRazaoSocial: '', 
-  }
+  };
 
   constructor(private fornecedorService: FornecedorService, 
-    private router: Router) { }
+              private router: Router) { }
 
-    ngOnInit(): void {
-        
-    }
-
-    createFornecedor(): void{
-      this.fornecedorService.create(this.fornecedor).subscribe(() => {
-        this.fornecedorService.showMessage('Fornecedor Criado!')
-        this.router.navigate(['/fornecedor'])
-      })
-    }
-
-    cancel(): void{
-      this.router.navigate(['/fornecedor'])
-    }
+  ngOnInit(): void {
+    // Método chamado ao inicializar o componente
   }
+
+  createFornecedor(): void {
+    // Método para criar um novo fornecedor
+    this.fornecedorService.create(this.fornecedor).subscribe(() => {
+      this.fornecedorService.showMessage('Fornecedor Criado!'); // Exibe mensagem de sucesso
+      this.router.navigate(['/fornecedores']); // Redireciona para a lista de fornecedores
+    });
+  }
+
+  cancel(): void {
+    // Método para cancelar a operação e redirecionar
+    this.router.navigate(['/fornecedores']); // Redireciona para a lista de fornecedores
+  }
+}

@@ -7,6 +7,7 @@ import { FornecedorCrudComponent } from './views/fornecedor-crud/fornecedor-crud
 import { FornecedorCreateComponent } from './component/fornecedor/fornecedor-create/fornecedor-create.component';
 import { FormaPagamentoCrudComponent } from './views/forma-pagamento-crud/forma-pagamento-crud.component';
 import { FormaPagamentoCreateComponent } from './component/formaPagamento/forma-pagamento-create/forma-pagamento-create.component';
+import { ProductUpdateComponent } from './component/product/product-update/product-update.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,11 @@ const routes: Routes = [
   path: "formaPagamento/create",
   component: FormaPagamentoCreateComponent
 },
+{
+  path: "products/update/:id",
+  component: ProductUpdateComponent
+}
+,
 ];
 
 @NgModule({

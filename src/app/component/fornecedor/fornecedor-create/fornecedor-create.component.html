@@ -1,25 +1,49 @@
 <mat-card>
+    <!-- Título do cartão que indica a funcionalidade do formulário -->
     <mat-card-title>Novo fornecedor</mat-card-title>
+    
+    <!-- Início do formulário para cadastro de um novo fornecedor -->
     <form>
+        <!-- Campo de entrada para o nome fantasia do fornecedor -->
         <mat-form-field>
-            <input matInput placeholder="Nome" [(ngModel)]="fornecedor.forNomeFantasia" name="forNomeFantasia">
+            <input 
+                matInput 
+                placeholder="Nome" 
+                [(ngModel)]="fornecedor.forNomeFantasia" 
+                name="forNomeFantasia">
         </mat-form-field>
+        
+        <!-- Campo de entrada para o CNPJ do fornecedor -->
         <mat-form-field>
-            <input matInput placeholder="Ex: XX.XXX.XXX/0001-XX" [(ngModel)]="fornecedor.forCnpj" name="forCnpj">
+            <input 
+                matInput 
+                placeholder="Ex: XX.XXX.XXX/0001-XX" 
+                [(ngModel)]="fornecedor.forCnpj" 
+                name="forCnpj">
         </mat-form-field>
+        
+        <!-- Campo de entrada para a razão social do fornecedor -->
         <mat-form-field>
-            <input matInput placeholder="Razão Social" [(ngModel)]="fornecedor.forRazaoSocial" name="forRazaoSocial">
+            <input 
+                matInput 
+                placeholder="Razão Social" 
+                [(ngModel)]="fornecedor.forRazaoSocial" 
+                name="forRazaoSocial">
         </mat-form-field>
-
-
     </form>
 
-    <button mat-raised-button (click)="createFornecedor()" color="primary">
+    <!-- Botão para salvar as informações do novo fornecedor -->
+    <button 
+        mat-raised-button 
+        (click)="createFornecedor()" 
+        color="primary">
         Salvar
     </button>
    
-    <button mat-raised-button (click)="cancel()">
+    <!-- Botão para cancelar a operação e possivelmente voltar à tela anterior -->
+    <button 
+        mat-raised-button 
+        (click)="cancel()">
         Cancelar
     </button>
-
 </mat-card>
