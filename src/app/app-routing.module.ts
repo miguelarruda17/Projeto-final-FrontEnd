@@ -8,6 +8,11 @@ import { FornecedorCreateComponent } from './component/fornecedor/fornecedor-cre
 import { FormaPagamentoCrudComponent } from './views/forma-pagamento-crud/forma-pagamento-crud.component';
 import { FormaPagamentoCreateComponent } from './component/formaPagamento/forma-pagamento-create/forma-pagamento-create.component';
 import { ProductUpdateComponent } from './component/product/product-update/product-update.component';
+import { FornecedorUpdateComponent } from './component/fornecedor/fornecedor-update/fornecedor-update.component';
+import { FormaPagamentoUpdateComponent } from './component/formaPagamento/forma-pagamento-update/forma-pagamento-update.component';
+import { ProductDeleteComponent } from './component/product/product-delete/product-delete.component';
+import { FornecedorDeleteComponent } from './component/fornecedor/fornecedor-delete/fornecedor-delete.component';
+import { FormaPagamentoDeleteComponent } from './component/formaPagamento/forma-pagamento-delete/forma-pagamento-delete.component';
 
 const routes: Routes = [
   {
@@ -41,8 +46,27 @@ const routes: Routes = [
 {
   path: "products/update/:id",
   component: ProductUpdateComponent
+},
+{
+  path: "fornecedor/update/:id",
+  component:FornecedorUpdateComponent
+},
+{
+ path: "formaPagamento/update/:id",
+ component:FormaPagamentoUpdateComponent
+},
+{
+  path: "products/delete/:proId",
+  component:ProductDeleteComponent
+},
+{
+  path: "fornecedor/delete/:forId", 
+  component: FornecedorDeleteComponent
+},
+{
+  path: "formaPagamento/delete/:fpgId", 
+  component: FormaPagamentoDeleteComponent
 }
-,
 ];
 
 @NgModule({

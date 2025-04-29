@@ -32,6 +32,11 @@ import { FornecedorCrudComponent } from './views/fornecedor-crud/fornecedor-crud
 import { FormaPagamentoCreateComponent } from './component/formaPagamento/forma-pagamento-create/forma-pagamento-create.component';
 import {MatTableModule} from '@angular/material/table';
 import { ProductUpdateComponent } from './component/product/product-update/product-update.component';
+import { FornecedorUpdateComponent } from './component/fornecedor/fornecedor-update/fornecedor-update.component';
+import { FormaPagamentoUpdateComponent } from './component/formaPagamento/forma-pagamento-update/forma-pagamento-update.component';
+import { ProductDeleteComponent } from './component/product/product-delete/product-delete.component';
+import { FornecedorDeleteComponent } from './component/fornecedor/fornecedor-delete/fornecedor-delete.component';
+import { FormaPagamentoDeleteComponent } from './component/formaPagamento/forma-pagamento-delete/forma-pagamento-delete.component';
 
 
 @NgModule({
@@ -51,6 +56,11 @@ import { ProductUpdateComponent } from './component/product/product-update/produ
     FornecedorCreateComponent,
     FormaPagamentoCreateComponent,
     ProductUpdateComponent,
+    FornecedorUpdateComponent,
+    FormaPagamentoUpdateComponent,
+    ProductDeleteComponent,
+    FornecedorDeleteComponent,
+    FormaPagamentoDeleteComponent,
   ],
   imports: [
     BrowserModule,

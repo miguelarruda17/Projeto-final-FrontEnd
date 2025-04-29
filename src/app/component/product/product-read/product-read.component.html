@@ -43,11 +43,11 @@
       <th mat-header-cell *matHeaderCellDef>Ações</th> <!-- Cabeçalho da coluna -->
       <td mat-cell *matCellDef="let row">
           <!-- Link para editar o produto, utilizando o routerLink para navegação -->
-          <a routerLink="/products/update/{{ row.id }}" class="edit">
+          <a routerLink="/products/update/{{ row.proId }}" class="edit">
               <i class="material-icons">edit</i> <!-- Ícone de edição -->
           </a>
           <!-- Link para excluir o produto, utilizando o routerLink para navegação -->
-          <a routerLink="/products/delete/{{ row.id }}" class="delete">
+          <a routerLink="/products/delete/{{ row.proId }}" class="delete">
               <i class="material-icons">delete</i> <!-- Ícone de exclusão -->
           </a>
       </td>

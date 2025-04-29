@@ -37,20 +37,19 @@ export class ProductService {
   }
 
   // Método para ler um produto específico pelo ID
-  readById(id: string): Observable<Product> {
-    const url = `${this.baseUrl}/${id}`; // Constrói a URL para o produto específico
+  readById(proId: string): Observable<Product> {
+    const url = `${this.baseUrl}/${proId}`; // Constrói a URL para o produto específico
     return this.http.get<Product>(url); // Faz uma requisição GET para obter o produto
   }
 
-  // Método para atualizar um produto existente
+  /** Atualiza um produto existente. */
   update(product: Product): Observable<Product> {
-    const url = `${this.baseUrl}/${product.proId}`; // Constrói a URL para o produto a ser atualizado
-    return this.http.put<Product>(url, product); // Faz uma requisição PUT para atualizar o produto
+    return this.http.put<Product>(`${this.baseUrl}/${product.proId}`, product);
   }
 
   // Método para excluir um produto pelo ID
-  delete(id: number): Observable<Product> {
-    const url = `${this.baseUrl}/${id}`; // Constrói a URL para o produto a ser excluído
+  delete(proId: number): Observable<Product> {
+    const url = `${this.baseUrl}/${proId}`; // Constrói a URL para o produto a ser excluído
     return this.http.delete<Product>(url); // Faz uma requisição DELETE para excluir o produto
   }
 }

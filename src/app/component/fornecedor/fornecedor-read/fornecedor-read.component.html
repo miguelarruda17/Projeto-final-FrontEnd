@@ -32,13 +32,13 @@
       <th mat-header-cell *matHeaderCellDef>Ações</th> <!-- Cabeçalho da coluna -->
       <td mat-cell *matCellDef="let row">
           <!-- Link para editar o fornecedor, utilizando o routerLink para navegação -->
-          <a routerLink="/fornecedor/update/{{ row.idFornecedor }}" class="edit">
+          <a routerLink="/fornecedor/update/{{ row.forId }}" class="edit">
               <i class="material-icons">
                   edit <!-- Ícone de edição -->
               </i>
           </a>
           <!-- Link para excluir o fornecedor, utilizando o routerLink para navegação -->
-          <a routerLink="/fornecedor/delete/{{ row.idFornecedor }}" class="delete">
+          <a routerLink="/fornecedor/delete/{{ row.forId }}" class="delete">
               <i class="material-icons">
                   delete <!-- Ícone de exclusão -->
               </i>
