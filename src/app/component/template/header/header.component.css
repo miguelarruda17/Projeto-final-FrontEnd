@@ -1,28 +1,26 @@
-/* Estilo para o cabeçalho da aplicação */
-.header {
-    display: flex; /* Utiliza o modelo de layout flexível */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    background-color: #e4e7b0; /* Define a cor de fundo do cabeçalho */
+.header{
+    display: flex;
+    align-items: center;
+    background-color: black;
 }
 
-/* Estilo para links dentro do cabeçalho */
 .header a {
-    display: flex; /* Utiliza o modelo de layout flexível para os links */
-    align-items: center; /* Alinha os itens verticalmente ao centro dentro do link */
-    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    
 }
 
-/* Estilo para o logotipo dentro do cabeçalho */
 .header .logo {
-    max-height: 32px; /* Define a altura máxima do logotipo */
+    max-height: 32px;
+    background-color: rgb(0, 0, 0);
 }
 
-/* Estilo para o grupo de títulos dentro do cabeçalho */
-.header .title-group {
-    padding-left: 25px; /* Adiciona um espaço à esquerda do grupo de títulos */
+.header .title-group{
+    padding-left: 25px;
+    color: rgb(255, 255, 255);
 }
 
-/* Estilo para ícones dentro do grupo de títulos */
 .header .title-group i {
-    padding-right: 5px; /* Adiciona um espaço à direita dos ícones */
+    padding-right: 5px;
 }

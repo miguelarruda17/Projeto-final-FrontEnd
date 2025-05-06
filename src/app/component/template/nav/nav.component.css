@@ -1,26 +1,23 @@
-/* Estilo para a barra lateral (sidenav) */
-.sidenav {
-    background-color: #f7e1b2; /* Define a cor de fundo da barra lateral */
-    width: 200px; /* Define a largura da barra lateral */
+.sidenav{
+    background-color: #8c419e;
+    width: 220px;
+}
+.sidenav a{
+    color: #000000;
+}
+.sidenav i{
+    padding-right: 10px;
+    color: rgb(255, 255, 255);
 }
 
-/* Estilo para links dentro da barra lateral */
-.sidenav a {
-    color: #fff; /* Define a cor do texto dos links como branco */
+.content{
+    
+    padding: 16px;
+    background-color: #8c419e;
 }
 
-/* Estilo para ícones dentro da barra lateral */
-.sidenav i {
-    padding-right: 10px; /* Adiciona um espaço à direita dos ícones */
-}
+span{
 
-/* Estilo para o conteúdo principal da aplicação */
-.content {
-    padding: 16px; /* Adiciona um espaçamento interno ao conteúdo */
-    background-color: #ececec; /* Define a cor de fundo do conteúdo */
-}
-
-/* Estilo para ícones do Material Icons */
-.material-icons {
-    color: #000000; /* Define a cor dos ícones como preto */
+color: white;
+font-weight: bold;
 }

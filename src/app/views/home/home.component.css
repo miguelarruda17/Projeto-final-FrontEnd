@@ -1,15 +1,17 @@
-/* Estilo para o título dentro da seção com a classe .home */
-.home .title {
-    font-size: 3rem; /* Define o tamanho da fonte do título como 3 rem (unidade relativa ao tamanho da fonte do elemento raiz) */
-    font-weight: 300; /* Define o peso da fonte como 300, que é um estilo mais leve */
-    line-height: 1.2; /* Define a altura da linha como 1.2 vezes o tamanho da fonte, melhorando a legibilidade */
-    color: #000000; /* Define a cor do texto como preto */
-    background-color: #ffffff; /* Define a cor de fundo como branco */
-}
+.home{
 
-/* Estilo para o subtítulo dentro da seção com a classe .home */
-.home .subtitle {
-    font-size: 1.1rem; /* Define o tamanho da fonte do subtítulo como 1.1 rem */
-    color: #000000; /* Define a cor do texto como preto */
-    background-color: #ffffff; /* Define a cor de fundo como branco */
-}
+    background-color: black;
+    
+    }
+    
+    .home .title{
+        font-size: 3rem;
+        font-weight: 300;
+        line-height: 1.2;
+        color: white;
+    }
+    
+    .home .subtitle{
+        font-size: 1.1rem;
+        color: white;
+    }
