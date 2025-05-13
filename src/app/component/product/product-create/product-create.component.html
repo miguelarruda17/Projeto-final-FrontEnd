@@ -17,20 +17,22 @@
         <!-- Campo de entrada para o preço de custo do produto -->
         <mat-form-field>
             <input 
-                matInput 
-                placeholder="Preço de Custo (R$)" 
-                [(ngModel)]="product.proPrecoCusto" 
-                name="proPrecoCusto">
-        </mat-form-field>
+              matInput 
+              type="number" 
+              placeholder="Preço de Custo (R$)" 
+              [(ngModel)]="product.proPrecoCusto" 
+              name="proPrecoCusto">
+          </mat-form-field>
         
         <!-- Campo de entrada para o preço de venda do produto -->
         <mat-form-field>
             <input 
-                matInput 
-                placeholder="Preço de Venda (R$)" 
-                [(ngModel)]="product.proPrecoVenda" 
-                name="proPrecoVenda">
-        </mat-form-field>
+              matInput 
+              type="number" 
+              placeholder="Preço de Venda (R$)" 
+              [(ngModel)]="product.proPrecoVenda" 
+              name="proPrecoVenda">
+          </mat-form-field>
     </form>
 
     <!-- Botão para salvar as informações do novo produto -->

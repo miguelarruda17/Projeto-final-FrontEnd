@@ -2,6 +2,6 @@
 export interface Product {
     proId?: number; // ID do produto (opcional)
     proNome: string; // Nome do produto (obrigatório)
-    proPrecoCusto: number; // Preço de custo do produto (obrigatório)
-    proPrecoVenda: number; // Preço de venda do produto (obrigatório)
+    proPrecoCusto: number | null; // Preço de custo do produto (obrigatório)
+    proPrecoVenda: number | null; // Preço de venda do produto (obrigatório)
 }

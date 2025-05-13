@@ -17,8 +17,8 @@ export class ProductCreateComponent implements OnInit {
   // Inicializa um objeto product com propriedades padrão
   product: Product = {
     proNome: '', // Nome do produto
-    proPrecoCusto: 0, // Preço de custo do produto
-    proPrecoVenda: 0 // Preço de venda do produto
+    proPrecoCusto: null, // Preço de custo do produto
+    proPrecoVenda: null // Preço de venda do produto
   }
 
   // Construtor que injeta o ProductService e o Router
