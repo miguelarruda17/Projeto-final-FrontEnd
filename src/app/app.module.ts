@@ -38,6 +38,10 @@ import { ProductDeleteComponent } from './component/product/product-delete/produ
 import { FornecedorDeleteComponent } from './component/fornecedor/fornecedor-delete/fornecedor-delete.component';
 import { FormaPagamentoDeleteComponent } from './component/formaPagamento/forma-pagamento-delete/forma-pagamento-delete.component';
 
+import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 @NgModule({
   declarations: [
@@ -61,6 +65,7 @@ import { FormaPagamentoDeleteComponent } from './component/formaPagamento/forma-
     ProductDeleteComponent,
     FornecedorDeleteComponent,
     FormaPagamentoDeleteComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -75,7 +80,11 @@ import { FormaPagamentoDeleteComponent } from './component/formaPagamento/forma-
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
-    MatTableModule
+    MatTableModule,
+    MatSelectModule,
+    MatDatepickerModule,       
+    MatNativeDateModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

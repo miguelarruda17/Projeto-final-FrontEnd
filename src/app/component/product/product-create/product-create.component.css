@@ -4,10 +4,27 @@ form {
     display: flex;
     /* Define a direção dos itens flexíveis como coluna, empilhando-os verticalmente */
     flex-direction: column;
+    
+    padding: 10px
 }
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 16px;
+  
+  @media (max-width: 768px) {
+    .form-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  }
+  mat-form-field{
+      width: 95%;
+  }
 
 /* Estilo para os botões */
 button {
     /* Define a margem superior como 20px, margem direita como 15px, e margens inferior e esquerda como 0px */
-    margin: 20px 15px 0px 0px;
+    margin: 20px 560px 10px 530px;
 }

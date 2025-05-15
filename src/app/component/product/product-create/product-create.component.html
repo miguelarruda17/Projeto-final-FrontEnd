@@ -5,34 +5,41 @@
     
     <!-- Início do formulário para cadastro de um novo produto -->
     <form>
+
+        <div class="form-grid">
         <!-- Campo de entrada para o nome do produto -->
-        <mat-form-field>
+        <mat-form-field appearance="fill" appearance="outline">
+           <mat-label>Nome</mat-label>
             <input 
-                matInput 
-                placeholder="Nome" 
+                matInput  
                 [(ngModel)]="product.proNome" 
                 name="proNome">
         </mat-form-field>
         
         <!-- Campo de entrada para o preço de custo do produto -->
-        <mat-form-field>
+        <mat-form-field appearance="fill" appearance="outline">
+           <mat-label>Preço de Custo (R$)</mat-label>
             <input 
               matInput 
-              type="number" 
-              placeholder="Preço de Custo (R$)" 
+              type="number"
               [(ngModel)]="product.proPrecoCusto" 
               name="proPrecoCusto">
           </mat-form-field>
         
         <!-- Campo de entrada para o preço de venda do produto -->
-        <mat-form-field>
+        <mat-form-field appearance="fill" appearance="outline">
+           <mat-label>Preço de Venda (R$)</mat-label>
             <input 
               matInput 
               type="number" 
-              placeholder="Preço de Venda (R$)" 
               [(ngModel)]="product.proPrecoVenda" 
               name="proPrecoVenda">
           </mat-form-field>
+
+          
+
+        </div>
+
     </form>
 
     <!-- Botão para salvar as informações do novo produto -->
