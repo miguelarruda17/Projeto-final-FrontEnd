@@ -12,7 +12,7 @@ export class FormaPagamentoCreateComponent implements OnInit {
 
   // Objeto que representa a forma de pagamento
   formaPagamento: FormaPagamento = {
-    fpgDescricao: "",
+    fpgFormato: "",
     fpgTipo: ""
   }
 

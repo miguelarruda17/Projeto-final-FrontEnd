@@ -2,10 +2,12 @@
     <mat-card-title>Alterar Forma de Pagamento</mat-card-title>
     <form>
         <mat-form-field>
-            <input matInput placeholder="Descricão" [(ngModel)]="formaPagamento.fpgDescricao" name="fpgDescricao">
+            <mat-label>Formato</mat-label>
+            <input matInput  [(ngModel)]="formaPagamento.fpgFormato" name="fpgFormato">
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder=" Tipo" [(ngModel)]="formaPagamento.fpgTipo" name="fpgTipo">
+            <mat-label>Tipo</mat-label>
+            <input matInput  [(ngModel)]="formaPagamento.fpgTipo" name="fpgTipo">
         </mat-form-field>
     </form>
 

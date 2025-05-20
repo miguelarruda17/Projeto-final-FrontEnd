@@ -10,7 +10,7 @@ import { FormaPagamentoService } from '../forma-pagamento.service';
 export class FormaPagamentoReadComponent {
 
   formaPagamento!: FormaPagamento[]; // Declaração da propriedade que armazenará a lista de formas de pagamento
-  displayedColumns = ['fpgId', 'fpgDescricao', 'fpgTipo', 'action']; // Colunas a serem exibidas na tabela
+  displayedColumns = ['fpgId', 'fpgFormato', 'fpgTipo', 'action']; // Colunas a serem exibidas na tabela
 
   constructor(private formaPagamentoService: FormaPagamentoService) { }
 

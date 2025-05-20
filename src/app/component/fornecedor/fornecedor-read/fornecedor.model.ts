@@ -7,7 +7,7 @@ export interface Fornecedor {
     forNomeFantasia: string;
 
     // Propriedade obrigatória 'forCnpj' do tipo number
-    forCnpj: number;
+    forCnpj: number | null;
 
     // Propriedade obrigatória 'forRazaoSocial' do tipo string
     forRazaoSocial: string;

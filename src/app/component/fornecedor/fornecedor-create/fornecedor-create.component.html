@@ -6,17 +6,19 @@
     <form>
         <!-- Campo de entrada para o nome fantasia do fornecedor -->
         <mat-form-field>
+            <mat-label>Nome Fantasia</mat-label>
             <input 
-                matInput 
-                placeholder="Nome" 
+                matInput  
                 [(ngModel)]="fornecedor.forNomeFantasia" 
                 name="forNomeFantasia">
         </mat-form-field>
         
         <!-- Campo de entrada para o CNPJ do fornecedor -->
         <mat-form-field>
+            <mat-label>CNPJ</mat-label>
             <input 
                 matInput 
+                type="number"
                 placeholder="Ex: XX.XXX.XXX/0001-XX" 
                 [(ngModel)]="fornecedor.forCnpj" 
                 name="forCnpj">
@@ -24,9 +26,9 @@
         
         <!-- Campo de entrada para a razão social do fornecedor -->
         <mat-form-field>
+            <mat-label>Razão Social</mat-label>
             <input 
                 matInput 
-                placeholder="Razão Social" 
                 [(ngModel)]="fornecedor.forRazaoSocial" 
                 name="forRazaoSocial">
         </mat-form-field>
