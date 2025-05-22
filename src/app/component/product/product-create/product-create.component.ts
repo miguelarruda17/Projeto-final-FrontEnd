@@ -17,8 +17,17 @@ export class ProductCreateComponent implements OnInit {
   // Inicializa um objeto product com propriedades padrão
   product: Product = {
     proNome: '', // Nome do produto
+    proDescricao: '',
     proPrecoCusto: null, // Preço de custo do produto
-    proPrecoVenda: null // Preço de venda do produto
+    proPrecoVenda: null, // Preço de venda do produto
+    proQuantidadeEstoque: null,
+    proCategoria: '',
+    proCodigoBarras: '',
+    proMarca: '',
+    proUnidadeMedida: '',
+    proStatus: '',
+    proDataCadastro: new Date(),
+    proDataAtualização: new Date(),
   }
 
   // Construtor que injeta o ProductService e o Router
@@ -32,7 +41,7 @@ export class ProductCreateComponent implements OnInit {
   // Método para criar um novo produto
   createProduct(): void {
     // Chama o método create do ProductService e passa o objeto product
-    this.productService.create(this.product).subscribe(() => {
+    this.productService.create(this.prepararPayload()).subscribe(() => {
       // Exibe uma mensagem de sucesso após a criação do produto
       this.productService.showMessage('Produto criado!');
       // Navega para a lista de produtos após a criação
@@ -45,4 +54,18 @@ export class ProductCreateComponent implements OnInit {
     // Navega para a lista de produtos
     this.router.navigate(['/products']);
   }
+
+// Prepara o payload para o backend (formato compatível com LocalDateTime)
+prepararPayload(): any {
+  return {
+    ...this.product,
+    proDataCadastro: this.product.proDataCadastro
+      ? this.product.proDataCadastro.toISOString().slice(0, 19) // yyyy-MM-ddTHH:mm:ss
+      : null
+  };
 }
+
+  
+}
+
+

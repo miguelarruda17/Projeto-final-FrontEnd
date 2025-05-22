@@ -23,6 +23,18 @@ form {
       width: 95%;
   }
 
+  .descrition1{
+
+    grid-column: span 2;
+
+  }
+
+  .descrition2{
+
+    width: 97.5%;
+
+  }
+
 /* Estilo para os botões */
 button {
     /* Define a margem superior como 20px, margem direita como 15px, e margens inferior e esquerda como 0px */

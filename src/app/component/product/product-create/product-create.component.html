@@ -36,7 +36,70 @@
               name="proPrecoVenda">
           </mat-form-field>
 
-          
+          <mat-form-field appearance="fill" appearance="outline">
+            <mat-label>Quantidade no estoque</mat-label>
+             <input 
+               matInput 
+               type="number" 
+               [(ngModel)]="product.proQuantidadeEstoque" 
+               name="proQuantidadeEstoque">
+           </mat-form-field>
+
+           <mat-form-field appearance="fill" appearance="outline">
+            <mat-label>Categoria</mat-label>
+             <input 
+               matInput  
+               [(ngModel)]="product.proCategoria" 
+               name="proCategoria">
+           </mat-form-field>
+
+           <mat-form-field appearance="fill" appearance="outline">
+            <mat-label>Codigo de barras</mat-label>
+             <input 
+               matInput 
+               [(ngModel)]="product.proCodigoBarras" 
+               name="proCodigoBarras">
+           </mat-form-field>
+
+           <mat-form-field appearance="fill" appearance="outline">
+            <mat-label>Marca</mat-label>
+             <input 
+               matInput 
+               [(ngModel)]="product.proMarca" 
+               name="proMarca">
+           </mat-form-field>
+
+           <mat-form-field appearance="fill" appearance="outline">
+            <mat-label>Unidade de medida</mat-label>
+             <input 
+               matInput
+               [(ngModel)]="product.proUnidadeMedida" 
+               name="proUnidadeMedida">
+           </mat-form-field>
+
+           <mat-form-field appearance="fill" appearance="outline">
+            <mat-label>Status</mat-label>
+            <mat-select [(ngModel)]="product.proStatus" name="proStatus">
+              <mat-option [value]="true">Disponivel</mat-option>
+              <mat-option [value]="false">Indisponivel</mat-option>
+            </mat-select>
+          </mat-form-field> 
+
+          <mat-form-field appearance="fill" appearance="outline">
+            <input matInput [matDatepicker]="picker1" placeholder="Data de Cadastro" [(ngModel)]="product.proDataCadastro" name="proDataCadastro">
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+          </mat-form-field>
+
+        <div class="descrition1">
+          <mat-form-field appearance="fill" appearance="outline" class="descrition2">
+            <mat-label>Descrição</mat-label>
+             <input 
+                 matInput  
+                 [(ngModel)]="product.proDescricao" 
+                 name="proDescricao">
+         </mat-form-field>
+         </div>
 
         </div>
 
