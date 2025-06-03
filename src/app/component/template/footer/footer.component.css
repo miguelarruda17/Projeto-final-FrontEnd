@@ -6,11 +6,21 @@
     display: flex;
     /*coloca no final da linha. sendo no lado direiro parte inferior*/
     justify-content: flex-end;
-    background-color: #000000;
+    background-color: rgb(231, 223, 194);
+    border: outset rgb(194, 167, 127);
+    border-width: 0px 3px 2px 0px;
 }
 
-.footer > span{
+.footer > span {
     font-size: 1.1rem;
     font-weight: 300;
-    color: rgb(255, 255, 255);
+    color: rgb(165,34,33);
+    font-weight: 600;
+    border: 3px outset rgb(194, 167, 127);
+    display: inline-block;
+    padding: 0;  /* remove espaço interno */
+    margin: 0;   /* remove espaço externo */
+    line-height: 1; /* evita espaçamento vertical extra */
+    background-color: rgb(163,138,104);
 }
+
