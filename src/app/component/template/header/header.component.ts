@@ -18,8 +18,11 @@ export class HeaderComponent {
   routeData: Record<string, { title: string, icon: string }> = {
     '/': { title: 'Inicio', icon: 'home' },
     '/products': { title: 'Produtos', icon: 'storefront' },
-    '/fornecedores': { title: 'Fornecedores', icon: 'group_add' },
+    '/products/create': { title: 'Novo Produto', icon: 'add_box' + 'storefront' },
+    '/fornecedores': { title: 'Fornecedores', icon: 'local_shipping' },
+    '/fornecedor/create': { title: 'Fornecedores', icon: 'add_box' + 'local_shipping' },
     '/formaPagamento': { title: 'Forma Pagamento', icon: 'local_atm' },
+    '/formaPagamento/create': { title: 'Forma Pagamento', icon: 'add_box' + 'local_atm' },
     // adicione outras rotas aqui
   };
 
