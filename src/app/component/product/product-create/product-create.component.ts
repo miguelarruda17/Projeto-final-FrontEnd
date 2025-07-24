@@ -5,6 +5,9 @@ import { Router } from '@angular/router';
 import { Product } from '../product-read/product.model';
 // Importa o serviço ProductService para gerenciar operações relacionadas a produtos
 import { ProductService } from '../product.service';
+import { Fornecedor } from '../../fornecedor/fornecedor-read/fornecedor.model';
+import { FornecedorService } from '../../fornecedor/fornecedor.service';
+
 
 // Decorador que define o componente
 @Component({
@@ -23,19 +26,27 @@ export class ProductCreateComponent implements OnInit {
     proQuantidadeEstoque: null,
     proCategoria: '',
     proCodigoBarras: '',
+    fornecedor: undefined,
     proMarca: '',
     proUnidadeMedida: '',
     proStatus: '',
     proDataCadastro: new Date(),
-    proDataAtualização: new Date(),
+    proDataAtualizacao: new Date(),
   }
 
+  forArray: Fornecedor[] = [];
+
   // Construtor que injeta o ProductService e o Router
-  constructor(private productService: ProductService, private router: Router) { }
+  constructor(private productService: ProductService, private fornecedorService: FornecedorService, private router: Router) { }
  
   // Método que é chamado quando o componente é inicializado
   ngOnInit(): void {
     // Pode ser utilizado para inicializar dados ou fazer chamadas de serviço
+
+      this.fornecedorService.read().subscribe((dados: Fornecedor[]) => {
+    this.forArray = dados.filter(fornecedores => fornecedores.forStatus === 'ATIVO');
+   });
+
   }
 
   // Método para criar um novo produto

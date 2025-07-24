@@ -61,6 +61,23 @@
                name="proCodigoBarras">
            </mat-form-field>
 
+           <mat-form-field appearance="fill" appearance="outline" hideRequiredMarker>
+             <mat-label>Fornecedor</mat-label>
+              <mat-select
+                [(ngModel)]="product.fornecedor"
+                name="fornecedor"
+                required
+                #fornecedorNgModel="ngModel">
+                <mat-option *ngFor="let fornecedor of forArray" [value]="fornecedor"  [disabled]="fornecedor.forStatus !== 'ATIVO'">
+                {{ fornecedor.forNomeFantasia }}
+              </mat-option>
+             </mat-select>
+              <mat-error *ngIf="fornecedorNgModel.invalid && fornecedorNgModel.touched">
+               Fornecedor é obrigatório.
+              </mat-error>
+           </mat-form-field>
+
+
            <mat-form-field appearance="fill" appearance="outline">
             <mat-label>Marca</mat-label>
              <input 
@@ -91,7 +108,6 @@
             <mat-datepicker #picker1></mat-datepicker>
           </mat-form-field>
 
-        <div class="descrition1">
           <mat-form-field appearance="fill" appearance="outline" class="descrition2">
             <mat-label>Descrição</mat-label>
              <input 
@@ -99,7 +115,6 @@
                  [(ngModel)]="product.proDescricao" 
                  name="proDescricao">
          </mat-form-field>
-         </div>
 
         </div>
 

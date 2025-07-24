@@ -6,9 +6,30 @@ export interface Fornecedor {
     // Propriedade obrigatória 'forNomeFantasia' do tipo string
     forNomeFantasia: string;
 
+    // Propriedade obrigatória 'forRazaoSocial' do tipo string
+    forRazaoSocial: string;
+
     // Propriedade obrigatória 'forCnpj' do tipo number
     forCnpj: number | null;
 
-    // Propriedade obrigatória 'forRazaoSocial' do tipo string
-    forRazaoSocial: string;
+    forStatus: string;
+
+    //Contato
+    conCelular: string;
+
+    conTelefoneComercial: string;
+
+    conEmail: string;
+
+    //endereço
+    endRua: string;
+
+    endNumero: string;
+
+    endCidade: string;
+
+    endCep: string;
+
+    endEstado: string;
+
 }

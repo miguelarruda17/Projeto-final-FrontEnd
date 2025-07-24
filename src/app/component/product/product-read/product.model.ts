@@ -1,3 +1,5 @@
+import { Fornecedor } from "../../fornecedor/fornecedor-read/fornecedor.model";
+
 // Define a interface Product que descreve a estrutura de um objeto produto
 export interface Product {
     proId?: number;
@@ -8,9 +10,10 @@ export interface Product {
     proQuantidadeEstoque: number | null; 
     proCategoria: string;
     proCodigoBarras: string;
+    fornecedor?: Fornecedor,
     proMarca: string;
     proUnidadeMedida: string;
     proStatus: string;
     proDataCadastro: Date | null;
-    proDataAtualização: Date | null;
+    proDataAtualizacao: Date | null;
 }

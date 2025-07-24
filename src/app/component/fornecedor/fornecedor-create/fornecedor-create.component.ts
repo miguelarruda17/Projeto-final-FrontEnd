@@ -11,9 +11,25 @@ import { FornecedorService } from '../fornecedor.service';
 export class FornecedorCreateComponent implements OnInit {
 
   fornecedor: Fornecedor = {
+    
+    //fornecedor//
     forNomeFantasia: '',
-    forCnpj: null,
     forRazaoSocial: '', 
+    forCnpj: null,
+    forStatus: '',
+    
+    //contato//
+    conCelular: '',
+    conTelefoneComercial: '',
+    conEmail: '',
+
+    //endereço//
+    endRua: '',
+    endNumero: '',
+    endCidade: '',
+    endCep: '',
+    endEstado: '',
+
   };
 
   constructor(private fornecedorService: FornecedorService, 
