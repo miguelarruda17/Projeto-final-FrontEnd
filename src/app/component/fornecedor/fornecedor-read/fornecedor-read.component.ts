@@ -10,7 +10,7 @@ import { FornecedorService } from '../fornecedor.service';
 export class FornecedorReadComponent implements OnInit {
 
   fornecedores!: Fornecedor[]; // Declaração da propriedade que armazenará a lista de fornecedores
-  displayedColumns = ['forId', 'forNomeFantasia', 'forCnpj', 'forRazaoSocial', 'action']; // Colunas a serem exibidas na tabela
+  displayedColumns = ['forId', 'forNomeFantasia', 'forRazaoSocial', 'forCnpj', 'action']; // Colunas a serem exibidas na tabela
 
   constructor(private fornecedorService: FornecedorService) { }
 

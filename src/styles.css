@@ -1,4 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; background-color: rgba(163,138,104); border: outset rgb(194, 167, 127); border-width: 0px 2px 0px 0px;}
+html, body { height: 100%; background-color: rgba(163,138,104); border: outset rgb(163,138,104); border-width: 0px 2px 0px 0px;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

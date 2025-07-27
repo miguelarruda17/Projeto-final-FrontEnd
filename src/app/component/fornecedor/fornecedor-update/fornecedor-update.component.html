@@ -1,15 +1,46 @@
 <mat-card>
     <mat-card-title>Alterar Fornececdor</mat-card-title>
-    <form>
-        <mat-form-field>
+    <form class="form-grid">
+        <!--Fornecedor-->
+        <mat-form-field appearance="fill" appearance="outline">
             <input matInput placeholder="Nome Fantasia" [(ngModel)]="fornecedor.forNomeFantasia" name="forNomeFantasia">
         </mat-form-field>
-        <mat-form-field>
-            <input matInput placeholder=" CNPJ" [(ngModel)]="fornecedor.forCnpj" name="forCnpj">
-        </mat-form-field>
-        <mat-form-field>
+        <mat-form-field appearance="fill" appearance="outline">
             <input matInput placeholder="Razão Social" [(ngModel)]="fornecedor.forRazaoSocial" name="forRazaoSocial">
         </mat-form-field>
+        <mat-form-field appearance="fill" appearance="outline">
+            <input matInput placeholder="CNPJ" [(ngModel)]="fornecedor.forCnpj" name="forCnpj">
+        </mat-form-field>
+        <mat-form-field appearance="fill" appearance="outline">
+            <input matInput placeholder="Status" [(ngModel)]="fornecedor.forStatus" name="forStatus">
+        </mat-form-field>
+        <!--Contato-->
+        <mat-form-field appearance="fill" appearance="outline">
+            <input matInput placeholder="Celular" [(ngModel)]="fornecedor.conCelular" name="conCelular">
+        </mat-form-field>
+        <mat-form-field appearance="fill" appearance="outline">
+            <input matInput placeholder="Telefone Comercial" [(ngModel)]="fornecedor.conTelefoneComercial" name="conTelefoneComercial">
+        </mat-form-field>
+        <mat-form-field appearance="fill" appearance="outline">
+            <input matInput placeholder="Email" [(ngModel)]="fornecedor.conEmail" name="conEmail">
+        </mat-form-field>
+        <!--Endereço-->
+        <mat-form-field appearance="fill" appearance="outline">
+            <input matInput placeholder="CEP" [(ngModel)]="fornecedor.endCep" name="endCep">
+        </mat-form-field>
+        <mat-form-field appearance="fill" appearance="outline">
+            <input matInput placeholder="Numero" [(ngModel)]="fornecedor.endNumero" name="endNumero">
+        </mat-form-field>
+        <mat-form-field appearance="fill" appearance="outline">
+            <input matInput placeholder="Rua" [(ngModel)]="fornecedor.endRua" name="endRua">
+        </mat-form-field>
+        <mat-form-field appearance="fill" appearance="outline">
+            <input matInput placeholder="Cidade" [(ngModel)]="fornecedor.endCidade" name="endCidade">
+        </mat-form-field>
+        <mat-form-field appearance="fill" appearance="outline">
+            <input matInput placeholder="Estado" [(ngModel)]="fornecedor.endEstado" name="endEstado">
+        </mat-form-field>
+        
     </form>
 
     <button mat-raised-button (click)="updateFornecedor()" color="primary">

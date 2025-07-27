@@ -15,7 +15,7 @@ export class FornecedorCreateComponent implements OnInit {
     //fornecedor//
     forNomeFantasia: '',
     forRazaoSocial: '', 
-    forCnpj: null,
+    forCnpj: '',
     forStatus: '',
     
     //contato//
@@ -32,8 +32,7 @@ export class FornecedorCreateComponent implements OnInit {
 
   };
 
-  constructor(private fornecedorService: FornecedorService, 
-              private router: Router) { }
+  constructor(private fornecedorService: FornecedorService, private router: Router) { }
 
   ngOnInit(): void {
     // Método chamado ao inicializar o componente

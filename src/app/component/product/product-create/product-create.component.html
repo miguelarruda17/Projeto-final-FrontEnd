@@ -1,12 +1,11 @@
 <!-- Cartão do Angular Material que contém o formulário para criar um novo produto -->
 <mat-card>
     <!-- Título do cartão que indica a funcionalidade do formulário -->
-    <mat-card-title>Novo Produto</mat-card-title>
+    <mat-card-title class="Titulo-Principal">Novo Produto</mat-card-title>
     
     <!-- Início do formulário para cadastro de um novo produto -->
-    <form>
+    <form class="form-grid">
 
-        <div class="form-grid">
         <!-- Campo de entrada para o nome do produto -->
         <mat-form-field appearance="fill" appearance="outline">
            <mat-label>Nome</mat-label>
@@ -103,12 +102,6 @@
           </mat-form-field> 
 
           <mat-form-field appearance="fill" appearance="outline">
-            <input matInput [matDatepicker]="picker1" placeholder="Data de Cadastro" [(ngModel)]="product.proDataCadastro" name="proDataCadastro">
-            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
-            <mat-datepicker #picker1></mat-datepicker>
-          </mat-form-field>
-
-          <mat-form-field appearance="fill" appearance="outline" class="descrition2">
             <mat-label>Descrição</mat-label>
              <input 
                  matInput  
@@ -116,7 +109,14 @@
                  name="proDescricao">
          </mat-form-field>
 
-        </div>
+          <mat-form-field appearance="fill" appearance="outline">
+            <mat-label>Data de Cadastro(Fixo)</mat-label>
+            <input matInput [matDatepicker]="picker" [(ngModel)]="product.proDataCadastro" name="proDataCadastro" readonly>
+
+            <mat-datepicker-toggle matSuffix [for]="picker" disabled></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+
+          </mat-form-field>
 
     </form>
 

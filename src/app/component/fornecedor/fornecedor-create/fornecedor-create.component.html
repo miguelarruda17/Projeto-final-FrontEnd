@@ -2,12 +2,12 @@
     <!-- Título do cartão que indica a funcionalidade do formulário -->
     <mat-card-title class="Titulo-Principal">Novo Fornecedor</mat-card-title>
 
-        <mat-card-title>Informações Pessoais</mat-card-title>
+
 
     <!-- Início do formulário para cadastro de um novo fornecedor -->
-    <form>
+    <form class="form-grid">
 
-        <div class="form-grid">
+        
         <!-- Campo de entrada para o nome fantasia do fornecedor -->
         <mat-form-field appearance="fill" appearance="outline">
             <mat-label>Nome Fantasia</mat-label>
@@ -30,8 +30,7 @@
         <mat-form-field appearance="fill" appearance="outline">
             <mat-label>CNPJ</mat-label>
             <input 
-                matInput 
-                type="number"
+                matInput
                 placeholder="Ex: XX.XXX.XXX/0001-XX" 
                 [(ngModel)]="fornecedor.forCnpj" 
                 name="forCnpj">
@@ -42,8 +41,8 @@
         <mat-form-field appearance="fill" appearance="outline">
             <mat-label>Status</mat-label>
             <mat-select [(ngModel)]="fornecedor.forStatus" name="forStatus">
-              <mat-option [value]="true">ATIVO</mat-option>
-              <mat-option [value]="false">INATIVO</mat-option>
+             <mat-option value="ATIVO">ATIVO</mat-option>
+             <mat-option value="INATIVO">INATIVO</mat-option>
             </mat-select>
         </mat-form-field>
         </div>  
@@ -54,29 +53,69 @@
             <mat-label>Celular</mat-label>
             <input 
                 matInput 
-                [(ngModel)]="fornecedor.forRazaoSocial" 
-                name="forRazaoSocial">
+                [(ngModel)]="fornecedor.conCelular" 
+                name="conCelular">
         </mat-form-field>
 
         <mat-form-field appearance="fill" appearance="outline">
             <mat-label>Telefone Comercial</mat-label>
             <input 
                 matInput 
-                [(ngModel)]="fornecedor.forRazaoSocial" 
-                name="forRazaoSocial">
+                [(ngModel)]="fornecedor.conTelefoneComercial" 
+                name="conTelefoneComercial">
         </mat-form-field>
 
         <mat-form-field appearance="fill" appearance="outline">
             <mat-label>Email</mat-label>
             <input 
                 matInput 
-                [(ngModel)]="fornecedor.forRazaoSocial" 
-                name="forRazaoSocial">
+                [(ngModel)]="fornecedor.conEmail" 
+                name="conEmail">
         </mat-form-field>
 
         <!--Local pro titulo ENDERECO-->
 
-        </div>
+        <mat-form-field appearance="fill" appearance="outline">
+            <mat-label>CEP</mat-label>
+            <input 
+                matInput 
+                [(ngModel)]="fornecedor.endCep" 
+                name="endCep">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" appearance="outline">
+            <mat-label>Numero</mat-label>
+            <input 
+                matInput 
+                [(ngModel)]="fornecedor.endNumero" 
+                name="endNumero">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" appearance="outline">
+            <mat-label>Rua</mat-label>
+            <input 
+                matInput 
+                [(ngModel)]="fornecedor.endRua" 
+                name="endRua">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" appearance="outline">
+            <mat-label>Cidade</mat-label>
+            <input 
+                matInput 
+                [(ngModel)]="fornecedor.endCidade" 
+                name="endCidade">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" appearance="outline">
+            <mat-label>Estado</mat-label>
+            <input 
+                matInput 
+                [(ngModel)]="fornecedor.endEstado" 
+                name="endEstado">
+        </mat-form-field>
+
+        
 
     </form>
 

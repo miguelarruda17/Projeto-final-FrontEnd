@@ -1,3 +1,9 @@
+mat-card{
+
+ background-color: rgb(255, 255, 255);
+
+}
+
 /* Estilo para o formulário */
 form {
     /* Define o layout do formulário como flexível */
@@ -6,6 +12,13 @@ form {
     flex-direction: column;
     
     padding: 15px
+}
+
+.Titulo-Principal{
+
+margin: 15px;
+color: rgb(255, 255, 255);
+
 }
 
 .form-grid {
@@ -22,7 +35,6 @@ form {
   mat-form-field{
       width: 95%;
   }
-
 
 /* Estilo para os botões */
 button {

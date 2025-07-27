@@ -13,18 +13,18 @@
     <ng-container matColumnDef="forNomeFantasia">
       <th mat-header-cell *matHeaderCellDef>Nome Fantasia</th> <!-- Cabeçalho da coluna -->
       <td mat-cell *matCellDef="let row">{{row.forNomeFantasia}}</td> <!-- Célula que exibe o Nome Fantasia -->
+    </ng-container> 
+
+    <!-- Definição da coluna para a Razão Social do fornecedor -->
+    <ng-container matColumnDef="forRazaoSocial">
+      <th mat-header-cell *matHeaderCellDef>Razao Social</th> <!-- Cabeçalho da coluna -->
+      <td mat-cell *matCellDef="let row">{{row.forRazaoSocial}}</td> <!-- Célula que exibe a Razão Social -->
     </ng-container>
 
     <!-- Definição da coluna para o CNPJ do fornecedor -->
     <ng-container matColumnDef="forCnpj">
       <th mat-header-cell *matHeaderCellDef>CNPJ</th> <!-- Cabeçalho da coluna -->
       <td mat-cell *matCellDef="let row">{{row.forCnpj}}</td> <!-- Célula que exibe o CNPJ do fornecedor -->
-    </ng-container>
-
-    <!-- Definição da coluna para a Razão Social do fornecedor -->
-    <ng-container matColumnDef="forRazaoSocial">
-      <th mat-header-cell *matHeaderCellDef>Razao Social</th> <!-- Cabeçalho da coluna -->
-      <td mat-cell *matCellDef="let row">{{row.forRazaoSocial}}</td> <!-- Célula que exibe a Razão Social -->
     </ng-container>
 
     <!-- Definição da coluna para ações (edição e exclusão) -->
