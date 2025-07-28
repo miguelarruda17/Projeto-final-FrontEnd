@@ -19,6 +19,7 @@ export class HeaderComponent {
     '/': { title: 'Inicio', icon: 'home' },
     '/products': { title: 'Produtos', icon: 'storefront' },
     '/products/create': { title: 'Novo Produto', icon: 'add_box' + 'storefront' },
+    '/products/update': { title: 'Atualizar Produto', icon: 'add_box' + 'storefront' },
     '/fornecedores': { title: 'Fornecedores', icon: 'local_shipping' },
     '/fornecedor/create': { title: 'Fornecedores', icon: 'add_box' + 'local_shipping' },
     '/formaPagamento': { title: 'Forma Pagamento', icon: 'local_atm' },
