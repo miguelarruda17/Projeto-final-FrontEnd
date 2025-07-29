@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 // Importa o MatSnackBar para exibir mensagens de feedback ao usuário
 import { MatSnackBar } from '@angular/material/snack-bar';
 // Importa a interface Fornecedor que define a estrutura do objeto fornecedor
-import { Fornecedor } from './fornecedor-read/fornecedor.model';
+import { Fornecedor } from './fornecedor.model';
 // Importa Observable do RxJS para trabalhar com programação reativa
 import { Observable } from 'rxjs';
 

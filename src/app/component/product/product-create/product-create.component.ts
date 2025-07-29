@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 import { Product } from '../product-read/product.model';
 // Importa o serviço ProductService para gerenciar operações relacionadas a produtos
 import { ProductService } from '../product.service';
-import { Fornecedor } from '../../fornecedor/fornecedor-read/fornecedor.model';
+import { Fornecedor } from '../../fornecedor/fornecedor.model';
 import { FornecedorService } from '../../fornecedor/fornecedor.service';
 
 

@@ -1,4 +1,4 @@
-import { Fornecedor } from "../../fornecedor/fornecedor-read/fornecedor.model";
+import { Fornecedor } from "../../fornecedor/fornecedor.model";
 
 // Define a interface Product que descreve a estrutura de um objeto produto
 export interface Product {

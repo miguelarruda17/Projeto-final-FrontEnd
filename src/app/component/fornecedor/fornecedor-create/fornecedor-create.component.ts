@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Fornecedor } from '../fornecedor-read/fornecedor.model';
+import { Fornecedor } from '../fornecedor.model';
 import { FornecedorService } from '../fornecedor.service';
 
 @Component({

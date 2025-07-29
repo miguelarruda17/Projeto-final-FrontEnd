@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Fornecedor } from '../fornecedor-read/fornecedor.model';
+import { Fornecedor } from '../fornecedor.model';
 import { FornecedorService } from '../fornecedor.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
