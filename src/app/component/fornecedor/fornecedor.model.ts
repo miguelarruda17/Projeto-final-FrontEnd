@@ -9,9 +9,10 @@ export interface Fornecedor {
     // Propriedade obrigatória 'forRazaoSocial' do tipo string
     forRazaoSocial: string;
 
-    // Propriedade obrigatória 'forCnpj' do tipo number
+    // Propriedade obrigatória 'forCnpj' do tipo string
     forCnpj: String;
 
+    // Propriedade obrigatória 'forStatus' do tipo string
     forStatus: string;
 
     //Contato
