@@ -19,12 +19,16 @@ export class HeaderComponent {
     '/': { title: 'Inicio', icon: 'home' },
     '/products': { title: 'Produtos', icon: 'storefront' },
     '/products/create': { title: 'Novo Produto', icon: 'add_box' + 'storefront' },
-    '/products/update': { title: 'Atualizar Produto', icon: 'add_box' + 'storefront' },
+    '/products/update/:id': { title: 'Editar Produto', icon: 'edit' + 'storefront' },
+    '/products/delete/:id': { title: 'Excluir Produto', icon: 'delete' + 'storefront' },
     '/fornecedores': { title: 'Fornecedores', icon: 'local_shipping' },
-    '/fornecedor/create': { title: 'Fornecedores', icon: 'add_box' + 'local_shipping' },
+    '/fornecedor/create': { title: 'Novo Fornecedor', icon: 'add_box' + 'local_shipping' },
+    '/fornecedor/update/:id': { title: 'Editar Fornecedor', icon: 'edit' + 'local_shipping' },
+    '/fornecedor/delete/:id': { title: 'Excluir Fornecedor', icon: 'delete' + 'local_shipping' },
     '/formaPagamento': { title: 'Forma Pagamento', icon: 'local_atm' },
-    '/formaPagamento/create': { title: 'Forma Pagamento', icon: 'add_box' + 'local_atm' },
-    '/formaPagamento/update/:id': { title: 'Forma Pagamento', icon: 'edit' + 'local_atm' },
+    '/formaPagamento/create': { title: 'Nova Forma Pagamento', icon: 'add_box' + 'local_atm' },
+    '/formaPagamento/update/:id': { title: 'Editar Forma Pagamento', icon: 'edit' + 'local_atm' },
+    '/formaPagamento/delete/:id': { title: 'Excluir Forma Pagamento', icon: 'delete' + 'local_atm' },
     // adicione outras rotas aqui
   };
 
