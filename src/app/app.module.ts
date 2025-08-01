@@ -45,16 +45,6 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
 
 import { RouterModule } from '@angular/router';
-import { ClienteCrudComponent } from './views/cliente-crud/cliente-crud.component';
-import { VendaCrudComponent } from './views/venda-crud/venda-crud.component';
-import { ClienteCreateComponent } from './component/cliente/cliente-create/cliente-create.component';
-import { ClienteReadComponent } from './component/cliente/cliente-read/cliente-read.component';
-import { ClienteDeleteComponent } from './component/cliente/cliente-delete/cliente-delete.component';
-import { ClienteUpdateComponent } from './component/cliente/cliente-update/cliente-update.component';
-import { VendaCreateComponent } from './component/venda/venda-create/venda-create.component';
-import { VendaDeleteComponent } from './component/venda/venda-delete/venda-delete.component';
-import { VendaReadComponent } from './component/venda/venda-read/venda-read.component';
-import { VendaUpdateComponent } from './component/venda/venda-update/venda-update.component';
 
 @NgModule({
   declarations: [
@@ -78,16 +68,6 @@ import { VendaUpdateComponent } from './component/venda/venda-update/venda-updat
     ProductDeleteComponent,
     FornecedorDeleteComponent,
     FormaPagamentoDeleteComponent,
-    ClienteCrudComponent,
-    VendaCrudComponent,
-    ClienteCreateComponent,
-    ClienteReadComponent,
-    ClienteDeleteComponent,
-    ClienteUpdateComponent,
-    VendaCreateComponent,
-    VendaDeleteComponent,
-    VendaReadComponent,
-    VendaUpdateComponent,
 
   ],
   imports: [
