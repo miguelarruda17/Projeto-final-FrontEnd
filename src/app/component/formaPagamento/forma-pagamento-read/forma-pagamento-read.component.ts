@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormaPagamento } from './forma-pagamento.model';
 import { FormaPagamentoService } from '../forma-pagamento.service';
 
@@ -7,7 +7,7 @@ import { FormaPagamentoService } from '../forma-pagamento.service';
   templateUrl: './forma-pagamento-read.component.html',
   styleUrls: ['./forma-pagamento-read.component.css']
 })
-export class FormaPagamentoReadComponent {
+export class FormaPagamentoReadComponent implements OnInit{
 
   formaPagamento!: FormaPagamento[]; // Declaração da propriedade que armazenará a lista de formas de pagamento
   displayedColumns = ['fpgId', 'fpgFormato', 'fpgTipo', 'action']; // Colunas a serem exibidas na tabela
