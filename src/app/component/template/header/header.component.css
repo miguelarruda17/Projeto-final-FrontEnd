@@ -18,12 +18,43 @@
     background-color: rgb(231, 223, 194);
 }
 
-.header .title-group{
-    padding-left: 10px;
+.header i {
+    padding-right: 4px;
     color: rgb(165,34,33);
-    font-weight: 625;
+    font-size: 25px;
+    vertical-align: middle;
+    display: flex;
+    padding: 3px;
+    font-weight: 500;
+    font-style: italic;
 }
 
-.header .title-group i {
-    padding-right: 5px;
+.Titulo-adaptavel {
+
+font-weight: 700;
+font-style:italic;
 }
+
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .padaria-title {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(165,34,33); /* ou a cor que combina com seu tema */
+  }
+  
+  .center-section {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(165,34,33);
+  }

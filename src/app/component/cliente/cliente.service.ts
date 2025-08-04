@@ -16,7 +16,7 @@ import { Observable } from 'rxjs';
 export class ClienteService {
 
   // URL base para as requisições relacionadas a fornecedores
-  baseUrl = "http://localhost:8080/cliente";
+  baseUrl = "http://localhost:8080/clientes";
 
   // Construtor que injeta o MatSnackBar e o HttpClient
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }

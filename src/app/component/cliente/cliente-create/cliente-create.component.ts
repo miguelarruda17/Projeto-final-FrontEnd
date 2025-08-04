@@ -10,7 +10,7 @@ import { ClienteService } from '../cliente.service';
 })
 export class ClienteCreateComponent implements OnInit {
 
-  cliente: Cliente = {
+  clientes: Cliente = {
     
     //cliente//
     cliNome: '',
@@ -38,7 +38,7 @@ export class ClienteCreateComponent implements OnInit {
 
   createCliente(): void {
     // Método para criar um novo fornecedor
-    this.clienteService.create(this.cliente).subscribe(() => {
+    this.clienteService.create(this.clientes).subscribe(() => {
       this.clienteService.showMessage('Cliente Criado!'); // Exibe mensagem de sucesso
       this.router.navigate(['/clientes']); // Redireciona para a lista de fornecedores
     });
