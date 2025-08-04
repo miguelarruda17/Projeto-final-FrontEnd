@@ -1,0 +1,16 @@
+/* Define a largura da tabela para ocupar 100% do contêiner pai */
+table {
+    width: 100%;
+}
+
+/* Estilo para ícones dentro de um elemento com a classe 'edit' */
+.edit > i {
+    /* Define a cor do ícone como um tom de amarelo */
+    color: #d9cd26;
+}
+
+/* Estilo para ícones dentro de um elemento com a classe 'delete' */
+.delete > i {
+    /* Define a cor do ícone como um tom de vermelho */
+    color: #e35e6b;
+}

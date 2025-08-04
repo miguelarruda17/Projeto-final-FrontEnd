@@ -45,6 +45,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
 
 import { RouterModule } from '@angular/router';
+import { ClienteCrudComponent } from './views/cliente-crud/cliente-crud.component';
 import { ClienteCreateComponent } from './component/cliente/cliente-create/cliente-create.component';
 import { ClienteReadComponent } from './component/cliente/cliente-read/cliente-read.component';
 import { ClienteDeleteComponent } from './component/cliente/cliente-delete/cliente-delete.component';
@@ -72,6 +73,7 @@ import { ClienteUpdateComponent } from './component/cliente/cliente-update/clien
     ProductDeleteComponent,
     FornecedorDeleteComponent,
     FormaPagamentoDeleteComponent,
+    ClienteCrudComponent,
     ClienteCreateComponent,
     ClienteReadComponent,
     ClienteDeleteComponent,

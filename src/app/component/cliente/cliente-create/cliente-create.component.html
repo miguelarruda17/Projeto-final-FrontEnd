@@ -1,1 +1,115 @@
-<p>cliente-create works!</p>
+<mat-card>
+    <!-- Título do cartão que indica a funcionalidade do formulário -->
+    <mat-card-title class="Titulo-Principal">Novo Cliente</mat-card-title>
+
+
+
+    <!-- Início do formulário para cadastro de um novo fornecedor -->
+    <form class="form-grid">
+
+        
+        <!-- Campo de entrada para o nome fantasia do fornecedor -->
+        <mat-form-field appearance="fill" appearance="outline">
+            <mat-label>Nome</mat-label>
+            <input 
+                matInput  
+                [(ngModel)]="cliente.cliNome" 
+                name="cliNome">
+        </mat-form-field>
+
+        <!-- Campo de entrada para o CNPJ do fornecedor -->
+        <mat-form-field appearance="fill" appearance="outline">
+            <mat-label>CPF</mat-label>
+            <input 
+                matInput
+                placeholder="Ex: XXX.XXX.XXX-XX" 
+                [(ngModel)]="cliente.cliCpf" 
+                name="cliCpf">
+        </mat-form-field> 
+        <!--Local pro titulo CONTATO-->
+
+        <mat-form-field appearance="fill" appearance="outline">
+            <mat-label>Celular</mat-label>
+            <input 
+                matInput 
+                [(ngModel)]="cliente.conCelular" 
+                name="conCelular">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" appearance="outline">
+            <mat-label>Telefone Comercial</mat-label>
+            <input 
+                matInput 
+                [(ngModel)]="cliente.conTelefoneComercial" 
+                name="conTelefoneComercial">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" appearance="outline">
+            <mat-label>Email</mat-label>
+            <input 
+                matInput 
+                [(ngModel)]="cliente.conEmail" 
+                name="conEmail">
+        </mat-form-field>
+
+        <!--Local pro titulo ENDERECO-->
+
+        <mat-form-field appearance="fill" appearance="outline">
+            <mat-label>CEP</mat-label>
+            <input 
+                matInput 
+                [(ngModel)]="cliente.endCep" 
+                name="endCep">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" appearance="outline">
+            <mat-label>Numero</mat-label>
+            <input 
+                matInput 
+                [(ngModel)]="cliente.endNumero" 
+                name="endNumero">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" appearance="outline">
+            <mat-label>Rua</mat-label>
+            <input 
+                matInput 
+                [(ngModel)]="cliente.endRua" 
+                name="endRua">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" appearance="outline">
+            <mat-label>Cidade</mat-label>
+            <input 
+                matInput 
+                [(ngModel)]="cliente.endCidade" 
+                name="endCidade">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" appearance="outline">
+            <mat-label>Estado</mat-label>
+            <input 
+                matInput 
+                [(ngModel)]="cliente.endEstado" 
+                name="endEstado">
+        </mat-form-field>
+
+        
+
+    </form>
+
+    <!-- Botão para salvar as informações do novo fornecedor -->
+    <button 
+        mat-raised-button 
+        (click)="createCliente()" 
+        color="primary">
+        Salvar
+    </button>
+   
+    <!-- Botão para cancelar a operação e possivelmente voltar à tela anterior -->
+    <button 
+        mat-raised-button 
+        (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
